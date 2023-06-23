@@ -1,0 +1,25 @@
+steps:
+
+- name: 'ubuntu:latest'
+  script: |
+    #!/usr/bin/env bash
+    ls -l
+
+- name: 'ubuntu:latest'
+  script: |
+    #!/usr/bin/env bash
+    echo "Build Started"
+    echo "Build done"
+
+- name: 'centos:7'
+  script: echo "Tests running"
+  
+- name: 'centos:7'
+  script: |
+    #!/usr/bin/env bash
+    echo "Deployment Started"
+    echo "Deployment done"
+
+logsBucket: 'gs://gds-log-bucket'
+options:
+  logging: GCS_ONLY
