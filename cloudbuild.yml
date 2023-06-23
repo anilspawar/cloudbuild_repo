@@ -20,6 +20,6 @@ steps:
     echo "Deployment Started"
     echo "Deployment done"
 
-logsBucket: 'gds-log-bucketttttttttt/'
+logsBucket: 'gds-log-buckettttttttttt/'
 options:
   logging: GCS_ONLY
